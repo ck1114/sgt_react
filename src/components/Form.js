@@ -28,7 +28,7 @@ export default class Form extends Component {
                 formError: true
             })
         }
-        
+
     }
 
     resetForm(){
