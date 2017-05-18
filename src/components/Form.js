@@ -32,7 +32,6 @@ export default class Form extends Component {
     }
 
     resetForm(){
-        console.log('called');
         this.setState({
             name: '',
             course: '',
