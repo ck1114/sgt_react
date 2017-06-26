@@ -46,7 +46,7 @@ export default class StudentList extends Component{
                     <td>{name}</td>
                     <td>{course}</td>
                     <td>{grade}</td>
-                    <td><button className="btn btn-primary" onClick={()=>this.handleEdit()}>Edit</button><button className="btn btn-danger" onClick={()=>this.dataDel(studentId)}>Delete</button></td>
+                    <td><button className="btn btn-primary glyphicon glyphicon-pencil" onClick={()=>this.handleEdit()}></button><button className="btn btn-danger glyphicon glyphicon-trash" onClick={()=>this.dataDel(studentId)}></button></td>
                 </tr>
             )
         }
@@ -56,7 +56,7 @@ export default class StudentList extends Component{
                     <td><input onChange={(event)=>this.setState({name: event.target.value})} value={this.state.name} type="text" className="form-control" name="studentName" placeholder="Student Name" /></td>
                     <td><input onChange={(event)=>this.setState({course: event.target.value})} value={this.state.course} type="text" className="form-control" name="studentCourse" placeholder="Student Course" /></td>
                     <td><input onChange={(event)=>this.setState({grade: event.target.value})} value={this.state.grade} type="text" className="form-control" name="studentGrade" placeholder="Student Grade" /></td>
-                    <td><button className="btn btn-success" onClick={()=>this.dataUpdate(studentId)}>Save</button><button className="btn btn-danger" onClick={()=>this.dataDel(studentId)}>Delete</button></td>
+                    <td><button className="btn btn-success glyphicon glyphicon-floppy-save" onClick={()=>this.dataUpdate(studentId)}></button><button className="btn btn-danger glyphicon glyphicon-trash" onClick={()=>this.dataDel(studentId)}></button></td>
                 </tr>
             )
         }
