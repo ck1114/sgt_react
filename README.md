@@ -7,3 +7,4 @@ Application developed using the following technologies:
 * React
 * Firebase
 * Bootstrap
+* CSS
